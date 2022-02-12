@@ -32,6 +32,11 @@ h1 {
     margin: 1.4rem 0 1rem;
 }
 
+h1:hover, span:hover {
+    color : var(--cyan);
+    cursor: pointer;
+}
+
 p {
     display: inline;
     line-height: 1.6rem;
@@ -50,11 +55,29 @@ p {
 
 .nft {
     height: 17rem;
+    background-color: rgba(0, 255, 247, 0.5);
     background-image: url(images/image-equilibrium.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 0.5rem;
+    position: relative;
+}
+
+.nft img {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+
+.nft:hover {
+    background-blend-mode: soft-light;
+    cursor: pointer;
+}
+
+.nft:hover img {
+    display: unset;
 }
 
 .details {
