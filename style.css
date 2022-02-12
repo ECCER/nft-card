@@ -40,9 +40,12 @@ p {
 .card {
     background-color: var(--very-dark-blue-c);
     width: 89%;
+    max-width: 20rem;
+    min-width: 17rem;
     margin: auto;
     padding: 1.5rem;
     border-radius: 1rem;
+    box-shadow: 0px 14px 12px 20px var(--very-dark-blue-m);
 }
 
 .nft {
